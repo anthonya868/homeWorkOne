@@ -18,9 +18,22 @@ package threeStrings;
 //Third string? donuts
 //go + fish is not equal to donuts!
 
+import java.util.*;
 public class ThreeStrings {
 
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        System.out.print("First string? ");
+        String string1 = sc.nextLine();
+        System.out.print("Second string? ");
+        String string2 = sc.nextLine();
+        System.out.print("Third string? ");
+        String string3 = sc.nextLine();
+        String combinedString = string1+string2;
+        if (combinedString.equals(string3)){
+            System.out.println(string1 + " + " + string2 + " is equal to " + string3 +"!");
+        } else {
+            System.out.println(string1 + " + " + string2 + " is not equal to " + string3 +"!");
+        }
     }
 }
